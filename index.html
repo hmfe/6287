@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="./script.js"></script>
+    <title>Sandbox</title>
+  </head>
+  <body>
+    <header>
+      <h1>Work Task</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Find a city</h2>
+        <div class="box">
+          <label for="search">Search</label>
+          <div class="search-box shadow">
+            <input id="search" type="text" onkeyup="inputHandler()" />
+            <button onclick="clearHandler()" class="clear-btn">&#10005;</button>
+          </div>
+          <div hidden class="shadow" id="search-result">
+            <h2 id="not-found" hidden>No result</h2>
+            <ul id="result-list"></ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="history-box" class="box row">
+          <h3 class="left flex">Search history</h3>
+          <button class="clear-history-btn" onclick="clearSearchHistory()"><strong>Clear search history</strong></button>
+          </ul>
+        </div>
+        <div class="box">
+            <ul id="search-history">
+        </div>
+      </section>
+      <aside>
+          <button class="delete-btn">
+              Delete
+              <span class="btn-circle">+</span>
+            </button>
+      </aside>
+    </main>
+  </body>
+</html>
