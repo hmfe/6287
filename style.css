@@ -1,0 +1,163 @@
+html {
+  font-size: 16px;
+  height: 100%;
+  min-height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 1rem;
+  box-sizing: border-box;
+
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+ul {
+  padding: 0.5rem;
+  list-style-type: none;
+  text-align: left;
+}
+
+input {
+  border: none;
+  flex: 1;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-box,
+#search-result {
+  border: 1px solid #d8d8d8;
+}
+
+#search-result {
+  margin-top: 0.2rem;
+  background: #fff;
+}
+
+.search-box {
+  display: flex;
+  padding: 0.5rem;
+  background: #fff;
+}
+
+.clear-history-btn {
+  text-decoration-line: underline;
+}
+
+.clear-btn {
+  color: #ccc;
+  font-size: 2rem;
+}
+.delete-btn {
+  border: 1.5px solid gray;
+  background-image: linear-gradient(to right, #f2af64, #ef9544);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem;
+  flex-wrap: nowrap;
+}
+
+.btn-circle {
+  transform: rotate(45deg);
+  font-size: 0.75rem;
+  background: white;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-left: 0.2rem;
+}
+
+.delete-btn, .btn-circle {
+  font-weight: bold;
+}
+
+#history-box, .history-item {
+  border-bottom:1px solid #ccc ;
+}
+
+#search-history {
+  padding: 0;
+}
+.history-item{
+  /* border-bottom: 1px solid #ccc; */
+  display: flex;
+  align-items: center;
+}
+
+
+
+.shadow {
+  box-shadow: 3px 3px 5px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.left {
+  text-align: left;
+}
+
+.flex {
+  flex: 1;
+}
+.row {
+  flex-direction: row;
+}
+
+h5, h6 {
+  margin: 0;
+}
+
+h6 {
+  font-weight: lighter;
+  color: #ccc;
+}
+@media only screen and (max-width: 400px) {
+  .box {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  .box {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .box {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .box {
+    width: 25%;
+  }
+}
